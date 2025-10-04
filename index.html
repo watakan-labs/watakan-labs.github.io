@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <title>わたかんラボ 🤓</title>
@@ -7,43 +8,50 @@
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-      margin: 0; padding: 0;
+      margin: 0;
+      padding: 0;
       background: #f9f9fb;
       color: #333;
     }
+
     /* ヘッダー */
     header {
-      background: #6a1b9a; /* 紫 */
+      background: #6a1b9a;
       color: white;
       padding: 1.5rem;
       text-align: center;
       font-size: 1.5rem;
       font-weight: bold;
     }
+
     header .tagline {
-  margin: 0.5rem 0 0;
-  font-size: 1rem;
-  font-weight: normal;
-  opacity: 0.9;
-  white-space: nowrap; /* 改行禁止 */
-  overflow: hidden;
-  text-overflow: ellipsis; /* 画面幅より長い場合は「…」にする */
+      margin: 0.5rem 0 0;
+      font-size: 1rem;
+      font-weight: normal;
+      opacity: 0.9;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
+
     /* 本文 */
     main {
       padding: 2rem 1rem;
       max-width: 900px;
       margin: 0 auto;
     }
+
     h2 {
       font-size: 1.3rem;
       margin-bottom: 1.5rem;
     }
+
     .app-list {
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
     }
+
     .app-item {
       display: flex;
       flex-direction: column;
@@ -51,48 +59,60 @@
       background: white;
       border-radius: 12px;
       padding: 1rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
+
     .app-top {
       display: flex;
       align-items: center;
       gap: 1rem;
     }
+
     .app-item img.icon {
       width: 64px;
       height: 64px;
       border-radius: 12px;
       flex-shrink: 0;
     }
+
     .app-info {
       flex: 1;
     }
+
     .app-info h3 {
       margin: 0 0 0.2rem;
       font-size: 1.1rem;
     }
+
     .app-info p {
       margin: 0;
       font-size: 0.9rem;
       color: #555;
       line-height: 1.3;
       display: -webkit-box;
-      -webkit-line-clamp: 2; /* 説明2行まで */
+      -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
+
     .store-badge img {
       width: 160px;
       height: auto;
     }
+
     .app-links {
       font-size: 0.85rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
     }
+
     .app-links a {
       color: #6a1b9a;
       text-decoration: none;
       margin-right: 1rem;
     }
+
     /* フッター */
     footer {
       margin-top: 3rem;
@@ -102,6 +122,7 @@
       text-align: center;
       color: #555;
     }
+
     footer .x-link svg {
       width: 24px;
       height: 24px;
@@ -109,27 +130,41 @@
       vertical-align: middle;
       transition: opacity 0.2s;
     }
+
     footer .x-link:hover svg {
       opacity: 0.7;
     }
+
     /* レスポンシブ */
     @media (max-width: 600px) {
       header .tagline {
         font-size: 0.85rem;
       }
+
       .app-top {
         flex-direction: column;
         align-items: flex-start;
         text-align: left;
       }
+
       .store-badge img {
         width: 100%;
         max-width: 200px;
         margin-top: 0.5rem;
       }
+
+      .app-links {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .app-links a {
+        margin-right: 0;
+      }
     }
   </style>
 </head>
+
 <body>
   <!-- ヘッダー -->
   <header>
@@ -157,6 +192,7 @@
         </div>
         <div class="app-links">
           <a href="nihonmeijo/privacy.html">プライバシーポリシー</a>
+          <a href="nihonmeijo/terms.html">利用規約</a>
           <a href="mailto:watakan.labs+nihonmeijo@gmail.com">お問い合わせ</a>
         </div>
       </div>
@@ -176,9 +212,10 @@
         1226.37h104.58l409.48-471.615 330.93 
         471.615h357.33L714.163 519.284Zm-145.78 
         165.87-47.525-67.451-377.23-534.759h162.34l304.59 
-        432.152 47.52 67.452 396.64 562.394h-162.34l-323.99-459.788Z"/>
+        432.152 47.52 67.452 396.64 562.394h-162.34l-323.99-459.788Z" />
       </svg>
     </a>
   </footer>
 </body>
+
 </html>
