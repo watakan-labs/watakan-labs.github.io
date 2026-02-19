@@ -3,46 +3,54 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>わたかんラボ 🤓</title>
+  <title>Watakan Labs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9fb;
+      background: #fafafb;
       color: #333;
     }
 
     /* ヘッダー */
     header {
-      background: #6a1b9a;
-      color: white;
-      padding: 1.5rem;
+      background: white;
+      color: #333;
+      padding: 3.2rem 1rem 2.8rem;
       text-align: center;
-      font-size: 1.5rem;
-      font-weight: bold;
     }
 
-    header .tagline {
-      margin: 0.5rem 0 0;
-      font-size: 1rem;
-      font-weight: normal;
-      opacity: 0.9;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+    header h1 {
+      margin: 0;
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+    }
+
+    header::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #6a1b9a;
+      margin: 1.4rem auto 0;
+      border-radius: 2px;
     }
 
     /* 本文 */
     main {
-      padding: 2rem 1rem;
+      padding: 2.5rem 1rem 2rem;
       max-width: 900px;
       margin: 0 auto;
     }
 
     h2 {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #666;
+      letter-spacing: 0.05em;
       margin-bottom: 1.5rem;
     }
 
@@ -59,7 +67,7 @@
       background: white;
       border-radius: 12px;
       padding: 1rem;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     }
 
     .app-top {
@@ -118,12 +126,12 @@
       margin-top: 3rem;
       padding: 1.5rem;
       font-size: 0.9rem;
-      background: #eee;
+      background: #f1f1f1;
       text-align: center;
       color: #555;
     }
 
-    footer .x-link svg {
+    .x-link svg {
       width: 24px;
       height: 24px;
       fill: #555;
@@ -131,16 +139,12 @@
       transition: opacity 0.2s;
     }
 
-    footer .x-link:hover svg {
+    .x-link:hover svg {
       opacity: 0.7;
     }
 
     /* レスポンシブ */
     @media (max-width: 600px) {
-      header .tagline {
-        font-size: 0.85rem;
-      }
-
       .app-top {
         flex-direction: column;
         align-items: flex-start;
@@ -168,8 +172,7 @@
 <body>
   <!-- ヘッダー -->
   <header>
-    わたかんラボ 🤓
-    <p class="tagline">趣味と遊びを実験する、小さなアプリ工房</p>
+    <h1>Watakan Labs</h1>
   </header>
 
   <!-- 本文 -->
@@ -179,9 +182,9 @@
       <!-- アプリ1 -->
       <div class="app-item">
         <div class="app-top">
-          <img class="icon" src="nihonmeijo/appicon.png" alt="日本名城アプリ">
+          <img class="icon" src="nihonmeijo/appicon.png" alt="日本名城200+アプリ">
           <div class="app-info">
-            <h3>日本名城アプリ</h3>
+            <h3>日本名城200+アプリ</h3>
             <p>百名城・続百名城をコレクションして、旅の思い出を残そう。</p>
           </div>
           <div class="store-badge">
@@ -196,6 +199,17 @@
           <a href="nihonmeijo/terms.html">利用規約</a>
           <a href="nihonmeijo/privacy.html">プライバシーポリシー</a>
           <a href="mailto:watakan.labs+nihonmeijo@gmail.com">お問い合わせ</a>
+          <a href="https://x.com/nihonmeijo_app" target="_blank" rel="noopener" class="x-link" aria-label="X">
+            <!-- Xロゴ (白背景用に濃い色で表示) -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227">
+              <path d="M714.163 519.284 1160.89 0H1056.31L667.137 
+        450.887 357.328 0H0l468.096 681.821L0 
+        1226.37h104.58l409.48-471.615 330.93 
+        471.615h357.33L714.163 519.284Zm-145.78 
+        165.87-47.525-67.451-377.23-534.759h162.34l304.59 
+        432.152 47.52 67.452 396.64 562.394h-162.34l-323.99-459.788Z" />
+            </svg>
+          </a>
         </div>
       </div>
 
@@ -206,17 +220,6 @@
   <!-- フッター -->
   <footer>
     <p>© 2025 Watakan Labs</p>
-    <a href="https://x.com/watakan727" target="_blank" rel="noopener" class="x-link" aria-label="X">
-      <!-- Xロゴ (白背景用に濃い色で表示) -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227">
-        <path d="M714.163 519.284 1160.89 0H1056.31L667.137 
-        450.887 357.328 0H0l468.096 681.821L0 
-        1226.37h104.58l409.48-471.615 330.93 
-        471.615h357.33L714.163 519.284Zm-145.78 
-        165.87-47.525-67.451-377.23-534.759h162.34l304.59 
-        432.152 47.52 67.452 396.64 562.394h-162.34l-323.99-459.788Z" />
-      </svg>
-    </a>
   </footer>
 </body>
 
