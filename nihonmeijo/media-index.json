@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "baseUrl": "https://watakan-labs.github.io/nihonmeijo/media/castles/",
+  "castles": {
+    "zoku100-153": {
+      "videos": [
+        {
+          "id": "zoku100-153-v01"
+        }
+      ],
+      "images": []
+    },
+    "zoku100-166": {
+      "videos": [
+        {
+          "id": "zoku100-166-v01"
+        }
+      ],
+      "images": []
+    }
+  }
+}
